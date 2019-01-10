@@ -1,0 +1,8 @@
+<div class="form">
+  <app-dynamic-form [config]="formConfig"></app-dynamic-form>
+
+  <div class="margin-top" style="width:100%; text-align: center;">
+    {{ form.value | json}}
+    <button mat-raised-button color="accent" (click)="debug()">Console Log</button>
+  </div>
+</div>
